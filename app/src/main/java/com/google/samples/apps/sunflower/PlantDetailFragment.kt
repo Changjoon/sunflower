@@ -63,6 +63,7 @@ class PlantDetailFragment : Fragment() {
                 plant?.let {
                     hideAppBarFab(fab)
                     plantDetailViewModel.addPlantToGarden()
+                    throw Exception()
                     Snackbar.make(root, R.string.added_plant_to_garden, Snackbar.LENGTH_LONG)
                         .show()
                 }
